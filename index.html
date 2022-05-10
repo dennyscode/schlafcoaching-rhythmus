@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <div class="background-image"></div>
+    <div class="sleeperator">
+        <img class="sleeperator__logo" src="img/LisannSander_Logo_kl.png">
+        <p class="sleeperator__sub-title">Baby & Kleinkind</p>
+        <p class="sleeperator__title">Schlaf-Generator</p>
+        <div class="sleeperator__info">
+            <p>Liebe Eltern,</p>
+            <br>
+            <p>Ihr seid verunsichert, ob euer Kind genügend Schaf bekommt und ob die Wachzeiten altersgerecht sind? Euer Kind ist unausgeglichen und weint beim Aufwachen?</p>
+            <br>
+            <p>Hier könnt ihr euch eine kostenlose Vorlage herunterladen:</p>
+            <br>
+            <a class="sleeperator-dl" href="#">Schlafprotokoll-Vorlage herunterladen</a>
+
+            <img class="sleeperator__mockup" src="img/Mockup_Protokoll.png">
+
+            <p>Nachdem ihr die Vorlage für ein paar Tage geführt habt, könnt...</p>
+        </div>
+        
+        <div class="sleep-container">
+            <div class="sleep-container__selections">
+                <div class="sleep-selection">
+                    <label for="child-age">Alter in Monaten<span>*</span></label>
+                    <select name="child-age" id="child-age" data-function="js-age">
+                        <option value="0">0-2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13-14</option>
+                        <option value="15">15-18</option>
+                        <option value="19">19-23</option>
+                        <option value="24">24-35</option>
+                        <option value="36">36 und älter</option>
+                    </select>
+                </div>
+
+                <div class="sleep-selection">
+                    <label for="child-wakeup">Aufstehzeit<span>*</span></label>
+                    <select name="child-wakeup" id="child-wakeup" data-function="js-time">
+                        <option value="5">5:00</option>
+                        <option value="5.5">5:30</option>
+                        <option value="6">6:00</option>
+                        <option value="6.5">6:30</option>
+                        <option value="7">7:00</option>
+                        <option value="7.5">7:30</option>
+                        <option value="8">8:00</option>
+                        <option value="8.5">8:30</option>
+                        <option value="9">9:00</option>
+                        <option value="9.5">9:30</option>
+                        <option value="10">10:00</option>
+                    </select>
+                </div>
+            </div>
+
+            <button href="#one" class="sleeperator__submit" type="button" data-function="js-sleep-generate">Generieren</button>
+
+            <div id="one" class="sleep-ooutput-container">
+                <div class="sleep-output" data-function="js-sleep-output">
+                    <div class="sleep-output__title">Schlafplan für euer Kind</div>
+                    <div class="sleep-output__result">
+                        <div class="sleep-output-schema">
+                            <div class="sleep-output-schema__diagram">
+                                <time>
+                                    <div class="times-pie" data-function="js-times-pie"></div>
+                                    <div class="marks">
+                                        <div class="mark"></div>
+                                        <div class="mark"></div>
+                                        <div class="mark"></div>
+                                        <div class="mark"></div>
+                                        <div class="mark"></div>
+                                        <div class="mark"></div>
+                                        <div class="mark"></div>
+                                        <div class="mark"></div>
+                                        <div class="mark"></div>
+                                        <div class="mark"></div>
+                                        <div class="mark"></div>
+                                        <div class="mark"></div>
+                                        <div class="mark"></div>
+                                        <div class="mark"></div>
+                                        <div class="mark"></div>
+                                        <div class="mark"></div>
+                                        <div class="mark"></div>
+                                        <div class="mark"></div>
+                                        <div class="mark"></div>
+                                        <div class="mark"></div>
+                                        <div class="mark"></div>
+                                        <div class="mark"></div>
+                                        <div class="mark"></div>
+                                        <div class="mark"></div>
+                                    </div>
+                                    <div class="times-legend">
+                                        <p class="times-legend__item times-legend__item--awake">
+                                            Wachzeit
+                                        </p>
+                                        <p class="times-legend__item times-legend__item--asleep">
+                                            Schlafzeit
+                                        </p>
+                                    </div>
+                                </time>
+                            </div>
+                            <div class="sleep-output-schema__infos">
+                                <div class="sleep-calcs">
+                                    <div class="sleep-calcs__item sleep-calcs__item--title">Übersicht:</div>
+                                    <div class="sleep-calcs__item">Aufwachzeit:
+                                        <span data-function="js-sleep-wakeup"></span>
+                                    </div>
+                                    <div class="sleep-calcs__item" data-function="js-sleep-1st">Erster Tagesschlaf:
+                                        <span class="js-sleep-calcs__erster-ts"></span>
+                                    </div>
+                                    <div class="sleep-calcs__item" data-function="js-sleep-2nd">Zweiter Tagesschlaf:
+                                        <span class="js-sleep-calcs__zweiter-ts"></span>
+                                    </div>
+                                    <div class="sleep-calcs__item" data-function="js-sleep-3rd">Dritter Tagesschlaf:
+                                        <span class="js-sleep-calcs__dritter-ts"></span>
+                                    </div>
+                                    <div class="sleep-calcs__item" data-function="js-sleep-4th">Vierter Tagesschlaf:
+                                        <span class="js-sleep-calcs__vierter-ts"></span>
+                                    </div>
+                                    <div class="sleep-calcs__item" data-function="js-sleep-5th">Fuenfter Tagesschlaf:
+                                        <span class="js-sleep-calcs__fuenfter-ts"></span>
+                                    </div>
+                                    <div class="sleep-calcs__item">Bettzeit:
+                                        <span class="js-sleep-calcs__bettzeit"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sleep-output__text">
+                        <div class="sleep-output-title">Beschreibung:</div>
+                        <p data-function="js-sleep-calc-text"></p>
+                    </div>
+                </div>
+                <img  class="loading-logo" data-function="js-loading-logo" src="img/LisannSander_Logo_kl.png">
+            </div>
+        </div>
+    </div>
+    
+    <script src="scripts.js"></script>
+</body>
+</html>

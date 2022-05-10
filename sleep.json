@@ -1,0 +1,168 @@
+// TS = Tagesschlaf
+var sleepTable = {
+    "0": {
+        "_1st_TS": null,
+        "_2nd_TS": null,
+        "_3rd_TS": null,
+        "_4th_TS": null,
+        "_5th_TS": null,
+        "bettzeit": null,
+        "text": "No text"
+    },
+    "3": {
+        "dauerTS": 1,
+        "_1st_TS": 1,
+        "_2nd_TS": 3.5,
+        "_3rd_TS": 5.75,
+        "_4th_TS": 8,
+        "_5th_TS": 10.25,
+        "bettzeit": 12,
+        "text": "3 Monate alte Babies brauchen 13-16 Stunden Schlaf pro Tag. Der Schlaf verteilt sich gleichmäßig über Tag und Nacht. Dabei wacht das Baby in etwa alle 3-4 Stunden auf zum Trinken. Mit dem 3. Monat beginnen viele Babys kontinuierlich länger zu schlafen in der Nacht. Still-Babys werden 6-12 Mal am Tag gestillt. Flaschenbabys in diesem 500-800 Gramm."
+    },
+    "4": {
+        "dauerTS": 1,
+        "_1st_TS": 1.5,
+        "_2nd_TS": 4.5,
+        "_3rd_TS": 7,
+        "_4th_TS": 9.5,
+        "_5th_TS": null,
+        "bettzeit": 12,
+        "text": "4 Monate alte Babies brauchen 14-16 Stunden Schlaf am Tag. Davon sind 10-12 Stunden Nachtschlaf und 3-4 Stunden Tagesschlaf über 4 bis 5 Tagesschläfchen verteilt. Die Schläfchen können sehr kurz ausfallen bei der Schlaf-Regression im 4. Monat. Still-Babys sollten 8-12 Mal in 24 Stunden gestillt werden, etwa alle 3-4 Stunden am Tag und alle 3-4 Stunden in der Nacht. Babys, die mit Milchpulver gefüttert werden, sollten etwa 500-800 Gramm zu sich nehmen. Tagsüber alle 3 Stunden und nachts alle 4-6 Stunden. In diesem Alter beträgt die durchschnittliche Wachzeit des Babys zwischen 1-2 Stunden."
+    },
+    "5": {
+        "dauerTS": 1,
+        "_1st_TS": 1.5,
+        "_2nd_TS": 4.5,
+        "_3rd_TS": 7.5,
+        "_4th_TS": 10,
+        "_5th_TS": null,
+        "bettzeit": 12.5,
+        "text": `Ein 5 Monate altes Baby benötigt im Durchschnitt 13-15 Stunden Schlaf pro Tag. Nachts wird es 11-12 Stunden schlafen , tagsüber 3 Stunden, in der Regel in drei Schläfchen. Zwei dieser Nickerchen sollten mindestens eine Stunde lang sein; das dritte Nickerchen kann ein kürzeres Nickerchen sein. Schlafenszeit sollte frühestens um 18 Uhr sein. Gestillte 5 Monate alte Babys sollten 8-10 Mal pro 24 Stunden gestillt werden, etwa alle 3 Stunden während des Tages, mit einer längeren Dehnung von 5-8 Stunden in der Nacht. Babys, die mit Muttermilchpulver gefüttert werden, sollten 500-800 Gramm zu sich nehmen und tagsüber etwa alle 3-4 Stunden gefüttert werden, nachts jedoch eine längere Pause von 5-8 Stunden. Die durchschnittliche Wachzeit eines 5 Monate alten Babys liegt bei 2-3 Stunden.`
+    },
+    "6": {
+        "dauerTS": 1,
+        "_1st_TS": 2,
+        "_2nd_TS": 5.5,
+        "_3rd_TS": 9,
+        "_4th_TS": null,
+        "_5th_TS": null,
+        "bettzeit": 12,
+        "text": "Ein 6 monate altes Baby benötigt 13-15 Stunden pro Tag. Nachts werden 11-12 Stunden benötigt, tagsüber 3 Stunden in 3 oder 4 Schläfchen. Zwei dieser Schläfchen sollten mindestens eine Stunde lang sein. Das letzte Schläfchen kann kürzer ausfallen. Die Schlafenszeit sollte frühestens 18 Uhr sein. Still-Babys sollten 8-10 Mal in 24 Stunden gestillt werden. Etwa alle 3 Stunden während des Tages, mit einer längeren Pause von 5-8 Stunden in der Nacht. Flaschenbabys sollten etwa 500-800 Gramm zu sich nehmen. Tagsüber sollten sie etwa alle 3-4 Stunden gefüttert werden und nachts mit einer längeren Pause von 5-8 Stunden. Mit 6 Monaten beginnen viele Eltern mit der Beikost. Die durchschnittliche Wachzeit eines 6 Monate alten Babys liegt bei etwa 2-2,5 Stunden."
+    },
+    "7": {
+        "dauerTS": 1,
+        "_1st_TS": 2,
+        "_2nd_TS": 6,
+        "_3rd_TS": 9.5,
+        "_4th_TS": null,
+        "_5th_TS": null,
+        "bettzeit": 12.5,
+        "text": "Ein 7 Monate altes Baby benötigt 13-15 Stunden Schlaf pro Tag. Nachts wird es 11-12 Stunden schlafen, tagsüber 3 Stunden, in zwei oder drei Nickerchen. Zwei dieser Nickerchen sollten mindestens eine Stunden lang sein; das dritte Nickerchen kann ein kürzeres Nickerchen sein. Schlafenszeit sollte frühestes um 18 Uhr sein. Still-Babys sollten etwa 6-10 Mal in 24 Stunden gestillt werden, etwa alle 3 Stunden während des Tages, mit einer längeren Pause von 5-8 Stunden in der Nacht. Flaschenbabys sollten etwa 600-900 Gramm und tagsüber etwa alle 3-4 Stunden gefüttert werden. Im Alter von 7 Monaten wachen viele Flaschenbabys nicht mehr auf, um zu trinken. Die durchschnittliche Wachzeit eines 7 Monate alten Babys beträgt etwa 2 Stunden am Morgen und 2,5 bis 3 Stunden am Nachmittag/Abend."
+    },
+    "8": {
+        "dauerTS": 1,
+        "_1st_TS": 2.5,
+        "_2nd_TS": 7,
+        "_3rd_TS": null,
+        "_4th_TS": null,
+        "_5th_TS": null,
+        "bettzeit": 12,
+        "text": "Ein 8 Monate altes Baby benötigt 13-15 Stunden Schlaf pro Tag. Nachts sollte es 11-12 Stunden schlafen, tagsüber 3 Stunden, in zwei oder drei Nickerchen. Zwei dieser Nickerchen sollten mindestens eine Stunde lang sein; das dritte Nickerchen kann ein kürzeres Nickerchen sein (wenn es überhaupt passiert). Schlafenszeit sollte frühestens um 18 Uhr sein. Still-Babys sollten etwa 6-10 Mal pro Tag gestillt werden, etwa alle 3 Stunden während des Tages mit einer längeren Pause von 6-10 Stunden in der Nacht. Viele Still-Babys werden in diesem Alter nur noch einmal pro Nacht gestillt. Flaschenbabys sollten etwa 600-900 Gramm zu sich nehmen und tagsüber etwa alle 3 Stunden gefüttert werden. Die meisten Flaschenbabys wachen meist nicht mehr auf, um zu trinken. Die durchschnittliche Wachzeit eines 8 Monate alten Babys liegt tagsüber zwischen 2,5 und 3 Stunden. [2-3-4 Regel]"
+    },
+    "9": {
+        "dauerTS": 1,
+        "_1st_TS": 2.5,
+        "_2nd_TS": 7,
+        "_3rd_TS": null,
+        "_4th_TS": null,
+        "_5th_TS": null,
+        "bettzeit": 12,
+        "text": "Ein 9 Monate altes Baby benötigt 13-15 Stunden Schlaf pro Tag. Nachts sollte es 11-12 Stunden schlafen, tagsüber 3 Stunden, in zwei Nickerchen. Diese Nickerchen sollten jeweils 1 bis 2 Stunden lang sein, wobei der Schlaf tagsüber auf 3 Stunden begrenzt ist. Es gibt jedoch auch Babys mit einem höheren Schlafbedarf. Schlafenszeit sollte frühestens um 18 Uhr sein. Still-Babys sollten etwa 6-10 Mal pro Tag gestillt werden, etwa alle 3 Stunden während des Tages mit einer längeren Pause von 6-10 Stunden in der Nacht. Viele Still-Babys werden in diesem Alter nur noch einmal pro Nacht gestillt. Flaschenbabys sollten etwa 600-900 Gramm zu sich nehmen und tagsüber etwa alle 3 Stunden trinken. Die meisten Flaschenbabys wachen meist nicht mehr auf, um zu trinken. Die durchschnittliche Wachzeit eines 9 Monate alten Babys beträgt tagsüber zwischen 3 und 3,5 Stunden. 2-3-4 Regel"
+    },
+    "10": {
+        "dauerTS": 1,
+        "_1st_TS": 3,
+        "_2nd_TS": 7,
+        "_3rd_TS": null,
+        "_4th_TS": null,
+        "_5th_TS": null,
+        "bettzeit": 12,
+        "text": "Ein 10 Monate altes Baby benötigt 13-15 Stunden Schlaf pro Tag. Nachts sollte es 11-12 Stunden schlafen, tagsüber 2-3 Stunden in zwei Nickerchen benötigt. Diese Nickerchen sollten jeweils mindestens 1 Stunde lang sein. Die Schlafenszeit sollte nach 18 Uhr beginnen. Still-Babys sollten etwa 6-10 Mal pro Tag gestillt werden, etwa alle 3 Stunden während des Tages mit einer längeren Pause von 6-10 Stunden in der Nacht. Viele Still-Babys werden in diesem Alter nur noch einmal pro Nacht gestillt, wenn überhaupt. Einige können nachts ganz aufhören zu stillen, aber eine Stillmahlzeit am Morgen schützt die Milchversorgung. Flaschenbabys sollten etwa 600-900 Gramm zu sich nehmen und tagsüber etwa alle 4 Stunden trinken. Die meisten Flaschenbabys wachen nachts meist nicht mehr auf, um zu trinken. Die durchschnittliche Wachzeit eines 10 Monate alten Babys beträgt tagsüber zwischen 3 und 3,5 Stunden. 2-3-4 Regel"
+    },
+    "11": {
+        "dauerTS": 1,
+        "_1st_TS": 3,
+        "_2nd_TS": 7.5,
+        "_3rd_TS": null,
+        "_4th_TS": null,
+        "_5th_TS": null,
+        "bettzeit": 12,
+        "text": "Ein 11 Monate altes Baby benötigt 13-15 Stunden Schlaf pro Tag. Nachts sollte es 11-12 Stunden schlafen, tagsüber 2-3 Stunden in zwei Nickerchen benötigt. Diese Nickerchen sollten jeweils mindestens 1 Stunde lang sein. Die Schlafenszeit sollte nach 18 Uhr beginnen. Still-Babys sollten etwa 5-8 Mal pro Tag gestillt werden, etwa alle 3 Stunden während des Tages mit einer längeren Pause von 6-10 Stunden in der Nacht. Viele Still-Babys werden in diesem Alter nur noch einmal pro Nacht gestillt, wenn überhaupt. Einige können nachts ganz aufhören zu stillen, aber eine Stillmahlzeit am Morgen schützt die Milchversorgung. Flaschenbabys sollten etwa 600-900 Gramm zu sich nehmen und tagsüber etwa alle 4 Stunden trinken. Die meisten Flaschenbabys wachen nachts meist nicht mehr auf, um zu trinken. Die durchschnittliche Wachzeit eines 11 Monate alten Babys beträgt tagsüber zwischen 3 und 4 Stunden. 2-3-4 Regel"
+    },
+    "12": {
+        "dauerTS": 1,
+        "_1st_TS": 3,
+        "_2nd_TS": 7.5,
+        "_3rd_TS": null,
+        "_4th_TS": null,
+        "_5th_TS": null,
+        "bettzeit": 12,
+        "text": "Kleinkinder im Alter von 12-18 Monaten benötigen 13-15 Stunden Schlaf pro Tag. Nachts sollte es 11-12 Stunden schlafen, tagsüber 2-3 Stunden in zwei Nickerchen benötigt. Diese Nickerchen sollten jeweils mindestens 1 Stunde lang sein. Bieten Sie 3 Mahlzeiten und 3 Zwischenmahlzeiten pro Tag an, wobei Milch zu den Mahlzeiten und zu den Zwischenmahlzeiten vor dem Schlafengehen angeboten werden sollte. Die Schlafenszeit sollte nicht vor 18 Uhr beginnen. Während einige Kleinkinder im Alter von etwa 12 Monaten dazu übergehen, nur noch ein Nickerchen pro Tag zu brauchen, liegt das Durchschnittsalter für diesen Übergang eher bei 15-18 Monaten. Im Alter von 12 bis 18 Monaten ist Ihr Kind durchschnittlich zwischen 3 und 4,5 Stunden wach. 2-3-4 Regel"
+    },
+    // 13 - 14 Monate:
+    "13": {
+        "dauerTS": 1,
+        "_1st_TS": 3.5,
+        "_2nd_TS": 8,
+        "_3rd_TS": null,
+        "_4th_TS": null,
+        "_5th_TS": null,
+        "bettzeit": 13,
+        "text": "Kleinkinder im Alter von 12-18 Monaten benötigen 13-15 Stunden Schlaf pro Tag. Nachts sollte es 11-12 Stunden schlafen, tagsüber 2-3 Stunden in zwei Nickerchen benötigt. Diese Nickerchen sollten jeweils mindestens 1 Stunde lang sein. Bieten Sie 3 Mahlzeiten und 3 Zwischenmahlzeiten pro Tag an, wobei Milch zu den Mahlzeiten und zu den Zwischenmahlzeiten vor dem Schlafengehen angeboten werden sollte. Die Schlafenszeit sollte nicht vor 18 Uhr beginnen. Während einige Kleinkinder im Alter von etwa 12 Monaten dazu übergehen, nur noch ein Nickerchen pro Tag zu brauchen, liegt das Durchschnittsalter für diesen Übergang eher bei 15-18 Monaten. Im Alter von 12 bis 18 Monaten ist Ihr Kind durchschnittlich zwischen 3 und 4,5 Stunden wach. 2-3-4 Regel"
+    },
+    // 15 - 18 Monate
+    "15": {
+        "dauerTS": 1,
+        "_1st_TS": 5,
+        "_2nd_TS": null,
+        "_3rd_TS": null,
+        "_4th_TS": null,
+        "_5th_TS": null,
+        "bettzeit": 12,
+        "text": "Kleinkinder im Alter von 15-18 Monaten benötigen 11-15 Stunden Schlaf pro Tag. Nachts sollte es 10-12 Stunden schlafen, tagsüber 1-3 Stunden in einem Nickerchen benötigt. Diese Nickerchen sollten mindestens 1 Stunde lang sein, bestenfalls 2 Stunden. Die Stimmung und das Verhalten Ihres Kleinkindes sind der beste Indikator dafür, ob es genug Schlaf bekommt. Bieten Sie 3 Mahlzeiten und 3 Zwischenmahlzeiten pro Tag an, wobei zu den Mahlzeiten und zum Zubettgehen Milch angeboten werden sollte. Keine Zubettgehzeiten vor 18 Uhr. 2-3-4 Regel"
+    },
+    // 19 - 23 Monate
+    "19": {
+        "dauerTS": 1,
+        "_1st_TS": 5,
+        "_2nd_TS": null,
+        "_3rd_TS": null,
+        "_4th_TS": null,
+        "_5th_TS": null,
+        "bettzeit": 12,
+        "text": "Kleinkinder im Alter von 1,5 bis 3 Jahren benötigen 11-15 Stunden Schlaf pro Tag. Nachts sollte es 10-12 Stunden schlafen, tagsüber 1-3 Stunden in einem Nickerchen benötigt. Dieses Nickerchen sollte mindestens 1 Stunde lang sein, bestenfalls 2 Stunden. Die Stimmung und das Verhalten Ihres Kleinkindes sind der beste Indikator dafür, ob es genug Schlaf bekommt. Bieten Sie 3 Mahlzeiten und 3 Zwischenmahlzeiten pro Tag an, wobei zu den Mahlzeiten und zum Zubettgehen Milch angeboten werden sollte. Keine Zubettgehzeiten vor 18 Uhr. 2-3-4 Regel"
+    },
+    // 24 - 35 Monate
+    "24": {
+        "dauerTS": 1,
+        "_1st_TS": 5,
+        "_2nd_TS": null,
+        "_3rd_TS": null,
+        "_4th_TS": null,
+        "_5th_TS": null,
+        "bettzeit": 12,
+        "text": "Kleinkinder im Alter von 1,5 bis 3 Jahren benötigen 11-15 Stunden Schlaf pro Tag. Nachts sollte es 10-12 Stunden schlafen, tagsüber 1-3 Stunden in einem Nickerchen benötigt. Dieses Nickerchen sollte mindestens 1 Stunde lang sein, bestenfalls 2 Stunden. Die Stimmung und das Verhalten Ihres Kleinkindes sind der beste Indikator dafür, ob es genug Schlaf bekommt. Bieten Sie 3 Mahlzeiten und 3 Zwischenmahlzeiten pro Tag an, wobei zu den Mahlzeiten und zum Zubettgehen Milch angeboten werden sollte. Keine Zubettgehzeiten vor 18 Uhr. 2-3-4 Regel"
+    },
+    // 36+ Monate
+    "36": {
+        "dauerTS": 1,
+        "_1st_TS": null,
+        "_2nd_TS": null,
+        "_3rd_TS": null,
+        "_4th_TS": null,
+        "_5th_TS": null,
+        "napTime": 1,
+        "bettzeit": 13.5,
+        "text": "Kleinkinder/Vorschulkinder im Alter von 3-5 Jahren benötigen etwa 10-12 Stunden Schlaf pro Tag. Dieser Schlaf findet höchstwahrscheinlich ausschließlich nachts statt, obwohl einige Kinder in diesem Alter auch über das 3. Lebensjahr hinaus noch einen Mittagsschlaf von etwa 1 Stunde Dauer halten. Das Alter, in dem Kleinkinder und Vorschulkinder ihren Mittagsschlaf aufgeben, ist sehr unterschiedlich, aber die meisten Kinder hören zwischen 3 und 4 Jahren auf zu schlafen. Keine Zubettgehzeiten vor 19 Uhr. 2-3-4 Regel"
+    },
+};
